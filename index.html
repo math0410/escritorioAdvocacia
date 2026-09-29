@@ -1,0 +1,1233 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Almeida & Associados | Advocacia Estratégica</title>
+  <meta
+    name="description"
+    content="Almeida & Associados — escritório de advocacia com atuação estratégica, atendimento personalizado e experiência jurídica."
+  />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            navy: "#07111F",
+            navyLight: "#0D1B2A",
+            gold: "#C8A45D",
+            goldLight: "#E3C98A",
+            cream: "#F7F5F0",
+          },
+          fontFamily: {
+            sans: ["Inter", "sans-serif"],
+            serif: ["Playfair Display", "serif"],
+          },
+        },
+      },
+    };
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: "Inter", sans-serif;
+    }
+
+    .serif {
+      font-family: "Playfair Display", serif;
+    }
+
+    .hero-pattern {
+      background-image:
+        linear-gradient(rgba(7, 17, 31, 0.94), rgba(7, 17, 31, 0.94)),
+        radial-gradient(circle at 80% 20%, rgba(200, 164, 93, 0.18), transparent 35%);
+    }
+
+    .gold-line {
+      width: 55px;
+      height: 2px;
+      background: #c8a45d;
+    }
+
+    .card-hover {
+      transition: all 0.3s ease;
+    }
+
+    .card-hover:hover {
+      transform: translateY(-6px);
+      border-color: rgba(200, 164, 93, 0.7);
+      box-shadow: 0 20px 40px rgba(7, 17, 31, 0.08);
+    }
+  </style>
+</head>
+
+<body class="bg-white text-slate-800">
+
+  <header
+    id="header"
+    class="fixed top-0 left-0 right-0 z-50 border-b border-white/10 bg-navy/95 backdrop-blur-md"
+  >
+    <div class="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 lg:px-8">
+
+      <a href="#" class="flex items-center gap-3">
+        <div class="flex h-11 w-11 items-center justify-center border border-gold">
+          <span class="serif text-xl text-gold">A</span>
+        </div>
+
+        <div>
+          <div class="serif text-lg font-semibold tracking-wide text-white">
+            ALMEIDA
+          </div>
+          <div class="text-[9px] uppercase tracking-[0.25em] text-gold">
+            & Associados
+          </div>
+        </div>
+      </a>
+
+      <nav class="hidden items-center gap-8 lg:flex">
+        <a href="#sobre" class="text-sm text-white/80 transition hover:text-gold">
+          O Escritório
+        </a>
+
+        <a href="#atuacao" class="text-sm text-white/80 transition hover:text-gold">
+          Áreas de Atuação
+        </a>
+
+        <a href="#equipe" class="text-sm text-white/80 transition hover:text-gold">
+          Equipe
+        </a>
+
+        <a href="#faq" class="text-sm text-white/80 transition hover:text-gold">
+          FAQ
+        </a>
+
+        <a
+          href="#contato"
+          class="border border-gold bg-gold px-5 py-3 text-sm font-semibold text-navy transition hover:bg-goldLight"
+        >
+          Fale Conosco
+        </a>
+      </nav>
+
+      <button
+        id="menuButton"
+        class="text-white lg:hidden"
+        aria-label="Abrir menu"
+      >
+        <svg class="h-7 w-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+            d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+      </button>
+    </div>
+
+    <div id="mobileMenu" class="hidden border-t border-white/10 bg-navy lg:hidden">
+      <nav class="flex flex-col px-6 py-5">
+        <a href="#sobre" class="border-b border-white/10 py-4 text-white/80">
+          O Escritório
+        </a>
+
+        <a href="#atuacao" class="border-b border-white/10 py-4 text-white/80">
+          Áreas de Atuação
+        </a>
+
+        <a href="#equipe" class="border-b border-white/10 py-4 text-white/80">
+          Equipe
+        </a>
+
+        <a href="#faq" class="border-b border-white/10 py-4 text-white/80">
+          FAQ
+        </a>
+
+        <a href="#contato" class="mt-4 bg-gold px-5 py-3 text-center font-semibold text-navy">
+          Fale Conosco
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero-pattern relative flex min-h-screen items-center overflow-hidden bg-navy pt-24">
+
+    <!-- Decorative circles -->
+    <div class="absolute -right-40 top-20 h-[500px] w-[500px] rounded-full border border-gold/10"></div>
+    <div class="absolute -right-20 top-40 h-[350px] w-[350px] rounded-full border border-gold/10"></div>
+
+    <div class="relative mx-auto grid max-w-7xl items-center gap-16 px-6 py-24 lg:grid-cols-2 lg:px-8">
+
+      <div>
+        <div class="mb-7 flex items-center gap-4">
+          <div class="gold-line"></div>
+          <span class="text-xs font-semibold uppercase tracking-[0.3em] text-gold">
+            Advocacia estratégica
+          </span>
+        </div>
+
+        <h1 class="serif max-w-3xl text-5xl font-semibold leading-tight text-white sm:text-6xl lg:text-7xl">
+          Experiência jurídica para
+          <span class="text-gold">decisões importantes.</span>
+        </h1>
+
+        <p class="mt-7 max-w-xl text-lg leading-8 text-white/65">
+          Atuamos de forma estratégica, personalizada e responsável para
+          proteger os interesses de nossos clientes e construir soluções
+          jurídicas sólidas.
+        </p>
+
+        <div class="mt-10 flex flex-col gap-4 sm:flex-row">
+
+          <a
+            href="#contato"
+            class="inline-flex items-center justify-center bg-gold px-7 py-4 font-semibold text-navy transition hover:bg-goldLight"
+          >
+            Agende uma consulta
+            <svg class="ml-3 h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+            </svg>
+          </a>
+
+          <a
+            href="#atuacao"
+            class="inline-flex items-center justify-center border border-white/20 px-7 py-4 font-medium text-white transition hover:border-gold hover:text-gold"
+          >
+            Conheça nossa atuação
+          </a>
+
+        </div>
+
+        <div class="mt-12 flex flex-wrap gap-8 border-t border-white/10 pt-8">
+          <div>
+            <strong class="serif text-3xl text-white">15+</strong>
+            <p class="mt-1 text-xs uppercase tracking-wider text-white/50">
+              Anos de experiência
+            </p>
+          </div>
+
+          <div>
+            <strong class="serif text-3xl text-white">1.200+</strong>
+            <p class="mt-1 text-xs uppercase tracking-wider text-white/50">
+              Casos analisados
+            </p>
+          </div>
+
+          <div>
+            <strong class="serif text-3xl text-white">98%</strong>
+            <p class="mt-1 text-xs uppercase tracking-wider text-white/50">
+              Clientes satisfeitos*
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hero card -->
+      <div class="hidden lg:block">
+        <div class="relative ml-auto max-w-md">
+
+          <div class="absolute -inset-5 border border-gold/20"></div>
+
+          <div class="relative bg-white p-10 shadow-2xl">
+
+            <div class="mb-10 flex items-center justify-between">
+              <div class="flex h-14 w-14 items-center justify-center border border-gold">
+                <span class="serif text-2xl text-gold">A</span>
+              </div>
+
+              <span class="text-xs uppercase tracking-[0.25em] text-slate-400">
+                Desde 2009
+              </span>
+            </div>
+
+            <div class="gold-line mb-6"></div>
+
+            <h2 class="serif text-3xl leading-tight text-navy">
+              Direito com estratégia, clareza e propósito.
+            </h2>
+
+            <p class="mt-5 leading-7 text-slate-500">
+              Cada caso é analisado individualmente para que nossos clientes
+              compreendam suas possibilidades e tomem decisões conscientes.
+            </p>
+
+            <div class="mt-8 border-t border-slate-200 pt-6">
+              <p class="text-sm font-semibold text-navy">
+                Atendimento personalizado
+              </p>
+
+              <p class="mt-1 text-sm text-slate-400">
+                Presencial e online
+              </p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="sobre" class="bg-cream py-24 lg:py-32">
+
+    <div class="mx-auto grid max-w-7xl gap-16 px-6 lg:grid-cols-2 lg:px-8">
+
+      <div>
+        <div class="mb-6 flex items-center gap-4">
+          <div class="gold-line"></div>
+          <span class="text-xs font-semibold uppercase tracking-[0.3em] text-gold">
+            O escritório
+          </span>
+        </div>
+
+        <h2 class="serif text-4xl leading-tight text-navy sm:text-5xl">
+          Uma advocacia construída sobre confiança.
+        </h2>
+
+        <p class="mt-7 leading-8 text-slate-600">
+          No Almeida & Associados, acreditamos que a advocacia vai além da
+          interpretação das leis. Nosso trabalho consiste em compreender
+          profundamente cada situação e desenvolver estratégias jurídicas
+          alinhadas aos objetivos de nossos clientes.
+        </p>
+
+        <p class="mt-5 leading-8 text-slate-600">
+          Unimos experiência, conhecimento técnico e atendimento próximo para
+          oferecer uma atuação jurídica transparente e responsável.
+        </p>
+
+        <a
+          href="#contato"
+          class="mt-8 inline-flex items-center font-semibold text-navy transition hover:text-gold"
+        >
+          Converse com nossa equipe
+          <svg class="ml-2 h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+              d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+          </svg>
+        </a>
+      </div>
+
+      <div class="grid grid-cols-2 gap-4">
+
+        <div class="border border-slate-200 bg-white p-7">
+          <div class="mb-5 flex h-12 w-12 items-center justify-center bg-navy text-gold">
+            <span class="text-xl">01</span>
+          </div>
+
+          <h3 class="serif text-xl text-navy">Estratégia</h3>
+
+          <p class="mt-3 text-sm leading-6 text-slate-500">
+            Análise cuidadosa para definir caminhos jurídicos consistentes.
+          </p>
+        </div>
+
+        <div class="mt-8 border border-slate-200 bg-white p-7">
+          <div class="mb-5 flex h-12 w-12 items-center justify-center bg-navy text-gold">
+            <span class="text-xl">02</span>
+          </div>
+
+          <h3 class="serif text-xl text-navy">Transparência</h3>
+
+          <p class="mt-3 text-sm leading-6 text-slate-500">
+            Comunicação clara em todas as etapas do trabalho.
+          </p>
+        </div>
+
+        <div class="border border-slate-200 bg-white p-7">
+          <div class="mb-5 flex h-12 w-12 items-center justify-center bg-navy text-gold">
+            <span class="text-xl">03</span>
+          </div>
+
+          <h3 class="serif text-xl text-navy">Experiência</h3>
+
+          <p class="mt-3 text-sm leading-6 text-slate-500">
+            Conhecimento construído através de anos de atuação profissional.
+          </p>
+        </div>
+
+        <div class="mt-8 border border-slate-200 bg-white p-7">
+          <div class="mb-5 flex h-12 w-12 items-center justify-center bg-navy text-gold">
+            <span class="text-xl">04</span>
+          </div>
+
+          <h3 class="serif text-xl text-navy">Proximidade</h3>
+
+          <p class="mt-3 text-sm leading-6 text-slate-500">
+            Atendimento personalizado e relacionamento próximo com o cliente.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="atuacao" class="bg-white py-24 lg:py-32">
+
+    <div class="mx-auto max-w-7xl px-6 lg:px-8">
+
+      <div class="mx-auto max-w-2xl text-center">
+
+        <div class="mb-5 flex items-center justify-center gap-4">
+          <div class="gold-line"></div>
+          <span class="text-xs font-semibold uppercase tracking-[0.3em] text-gold">
+            Especialidades
+          </span>
+          <div class="gold-line"></div>
+        </div>
+
+        <h2 class="serif text-4xl text-navy sm:text-5xl">
+          Áreas de atuação
+        </h2>
+
+        <p class="mt-5 leading-7 text-slate-500">
+          Atuação jurídica especializada para diferentes necessidades de
+          pessoas físicas e empresas.
+        </p>
+      </div>
+
+      <div class="mt-16 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+
+        <!-- Card -->
+        <article class="card-hover border border-slate-200 bg-white p-8">
+
+          <div class="mb-7 flex h-14 w-14 items-center justify-center bg-navy">
+            <svg class="h-6 w-6 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                d="M12 3v18M5 8h14M6 21h12M8 8l-3 7h6L8 8zm8 0l-3 7h6l-3-7z"/>
+            </svg>
+          </div>
+
+          <h3 class="serif text-2xl text-navy">Direito Civil</h3>
+
+          <p class="mt-4 text-sm leading-7 text-slate-500">
+            Contratos, responsabilidade civil, indenizações, obrigações e
+            relações jurídicas em geral.
+          </p>
+
+          <a href="#contato" class="mt-6 inline-block text-sm font-semibold text-gold">
+            Saiba mais →
+          </a>
+        </article>
+
+
+        <article class="card-hover border border-slate-200 bg-white p-8">
+
+          <div class="mb-7 flex h-14 w-14 items-center justify-center bg-navy">
+            <svg class="h-6 w-6 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                d="M9 12h6m-6 4h6M8 3h8l3 3v15H5V3h3z"/>
+            </svg>
+          </div>
+
+          <h3 class="serif text-2xl text-navy">Direito Empresarial</h3>
+
+          <p class="mt-4 text-sm leading-7 text-slate-500">
+            Assessoria jurídica para empresas, contratos empresariais,
+            negociações e questões societárias.
+          </p>
+
+          <a href="#contato" class="mt-6 inline-block text-sm font-semibold text-gold">
+            Saiba mais →
+          </a>
+        </article>
+
+
+        <article class="card-hover border border-slate-200 bg-white p-8">
+
+          <div class="mb-7 flex h-14 w-14 items-center justify-center bg-navy">
+            <svg class="h-6 w-6 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                d="M12 2a9 9 0 100 18 9 9 0 000-18zm0 4v6l4 2"/>
+            </svg>
+          </div>
+
+          <h3 class="serif text-2xl text-navy">Direito Trabalhista</h3>
+
+          <p class="mt-4 text-sm leading-7 text-slate-500">
+            Consultoria e atuação em questões relacionadas às relações de
+            trabalho e legislação trabalhista.
+          </p>
+
+          <a href="#contato" class="mt-6 inline-block text-sm font-semibold text-gold">
+            Saiba mais →
+          </a>
+        </article>
+
+
+        <article class="card-hover border border-slate-200 bg-white p-8">
+
+          <div class="mb-7 flex h-14 w-14 items-center justify-center bg-navy">
+            <svg class="h-6 w-6 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                d="M7 4h10v16H7zM9 7h6M9 11h6M9 15h4"/>
+            </svg>
+          </div>
+
+          <h3 class="serif text-2xl text-navy">Direito de Família</h3>
+
+          <p class="mt-4 text-sm leading-7 text-slate-500">
+            Divórcio, guarda, alimentos, inventário e demais questões
+            relacionadas ao Direito de Família.
+          </p>
+
+          <a href="#contato" class="mt-6 inline-block text-sm font-semibold text-gold">
+            Saiba mais →
+          </a>
+        </article>
+
+
+        <article class="card-hover border border-slate-200 bg-white p-8">
+
+          <div class="mb-7 flex h-14 w-14 items-center justify-center bg-navy">
+            <svg class="h-6 w-6 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                d="M5 21h14M6 21V7l6-4 6 4v14M9 21v-6h6v6"/>
+            </svg>
+          </div>
+
+          <h3 class="serif text-2xl text-navy">Direito Imobiliário</h3>
+
+          <p class="mt-4 text-sm leading-7 text-slate-500">
+            Contratos, compra e venda, análise documental e questões
+            relacionadas a imóveis.
+          </p>
+
+          <a href="#contato" class="mt-6 inline-block text-sm font-semibold text-gold">
+            Saiba mais →
+          </a>
+        </article>
+
+
+        <article class="card-hover border border-slate-200 bg-white p-8">
+
+          <div class="mb-7 flex h-14 w-14 items-center justify-center bg-navy">
+            <svg class="h-6 w-6 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                d="M12 3l8 4v5c0 5-3.5 8-8 9-4.5-1-8-4-8-9V7l8-4z"/>
+            </svg>
+          </div>
+
+          <h3 class="serif text-2xl text-navy">Direito Digital</h3>
+
+          <p class="mt-4 text-sm leading-7 text-slate-500">
+            Questões jurídicas envolvendo tecnologia, internet, dados,
+            contratos digitais e ambiente online.
+          </p>
+
+          <a href="#contato" class="mt-6 inline-block text-sm font-semibold text-gold">
+            Saiba mais →
+          </a>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-navy py-20">
+
+    <div class="mx-auto max-w-5xl px-6 text-center">
+
+      <div class="mx-auto mb-6 gold-line"></div>
+
+      <h2 class="serif text-4xl text-white sm:text-5xl">
+        Precisa de orientação jurídica?
+      </h2>
+
+      <p class="mx-auto mt-5 max-w-2xl leading-7 text-white/60">
+        Conte-nos brevemente sobre sua situação. Nossa equipe fará uma
+        avaliação inicial para entender como podemos ajudar.
+      </p>
+
+      <a
+        href="#contato"
+        class="mt-8 inline-flex bg-gold px-8 py-4 font-semibold text-navy transition hover:bg-goldLight"
+      >
+        Falar com um advogado
+      </a>
+
+    </div>
+  </section>
+
+  <section class="border-b border-slate-200 bg-cream py-20">
+
+    <div class="mx-auto grid max-w-7xl grid-cols-2 gap-8 px-6 lg:grid-cols-4 lg:px-8">
+
+      <div class="text-center">
+        <div class="serif text-4xl text-navy">15+</div>
+        <p class="mt-2 text-xs uppercase tracking-wider text-slate-500">
+          Anos de experiência
+        </p>
+      </div>
+
+      <div class="text-center">
+        <div class="serif text-4xl text-navy">1.200+</div>
+        <p class="mt-2 text-xs uppercase tracking-wider text-slate-500">
+          Casos analisados
+        </p>
+      </div>
+
+      <div class="text-center">
+        <div class="serif text-4xl text-navy">6</div>
+        <p class="mt-2 text-xs uppercase tracking-wider text-slate-500">
+          Áreas de atuação
+        </p>
+      </div>
+
+      <div class="text-center">
+        <div class="serif text-4xl text-navy">24h</div>
+        <p class="mt-2 text-xs uppercase tracking-wider text-slate-500">
+          Retorno inicial*
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="equipe" class="bg-white py-24 lg:py-32">
+
+    <div class="mx-auto max-w-7xl px-6 lg:px-8">
+
+      <div class="max-w-2xl">
+
+        <div class="mb-6 flex items-center gap-4">
+          <div class="gold-line"></div>
+          <span class="text-xs font-semibold uppercase tracking-[0.3em] text-gold">
+            Nossa equipe
+          </span>
+        </div>
+
+        <h2 class="serif text-4xl text-navy sm:text-5xl">
+          Profissionais preparados para questões importantes.
+        </h2>
+
+        <p class="mt-5 leading-7 text-slate-500">
+          Uma equipe multidisciplinar com experiência e dedicação para
+          compreender cada caso sob diferentes perspectivas.
+        </p>
+
+      </div>
+
+
+      <div class="mt-14 grid gap-6 md:grid-cols-3">
+
+        <div class="group">
+          <div class="aspect-[4/5] overflow-hidden bg-slate-200">
+            <div class="flex h-full items-center justify-center bg-navy">
+              <span class="serif text-7xl text-gold/40">RA</span>
+            </div>
+          </div>
+
+          <div class="border border-t-0 border-slate-200 p-6">
+            <h3 class="serif text-2xl text-navy">
+              Rafael Almeida
+            </h3>
+
+            <p class="mt-1 text-xs uppercase tracking-widest text-gold">
+              Sócio fundador
+            </p>
+
+            <p class="mt-4 text-sm leading-6 text-slate-500">
+              Direito Empresarial e Civil
+            </p>
+          </div>
+        </div>
+
+
+        <div class="group">
+          <div class="aspect-[4/5] overflow-hidden bg-slate-200">
+            <div class="flex h-full items-center justify-center bg-navy">
+              <span class="serif text-7xl text-gold/40">CM</span>
+            </div>
+          </div>
+
+          <div class="border border-t-0 border-slate-200 p-6">
+            <h3 class="serif text-2xl text-navy">
+              Camila Martins
+            </h3>
+
+            <p class="mt-1 text-xs uppercase tracking-widest text-gold">
+              Sócia
+            </p>
+
+            <p class="mt-4 text-sm leading-6 text-slate-500">
+              Direito de Família e Sucessões
+            </p>
+          </div>
+        </div>
+
+
+        <div class="group">
+          <div class="aspect-[4/5] overflow-hidden bg-slate-200">
+            <div class="flex h-full items-center justify-center bg-navy">
+              <span class="serif text-7xl text-gold/40">LV</span>
+            </div>
+          </div>
+
+          <div class="border border-t-0 border-slate-200 p-6">
+            <h3 class="serif text-2xl text-navy">
+              Lucas Vieira
+            </h3>
+
+            <p class="mt-1 text-xs uppercase tracking-widest text-gold">
+              Advogado associado
+            </p>
+
+            <p class="mt-4 text-sm leading-6 text-slate-500">
+              Direito Trabalhista e Digital
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-cream py-24">
+
+    <div class="mx-auto max-w-7xl px-6 lg:px-8">
+
+      <div class="mx-auto max-w-2xl text-center">
+
+        <div class="mb-5 flex items-center justify-center gap-4">
+          <div class="gold-line"></div>
+          <span class="text-xs font-semibold uppercase tracking-[0.3em] text-gold">
+            Relacionamento
+          </span>
+          <div class="gold-line"></div>
+        </div>
+
+        <h2 class="serif text-4xl text-navy">
+          O que nossos clientes dizem
+        </h2>
+
+      </div>
+
+
+      <div class="mt-14 grid gap-6 md:grid-cols-3">
+
+        <blockquote class="border border-slate-200 bg-white p-8">
+
+          <div class="mb-6 text-gold">
+            ★★★★★
+          </div>
+
+          <p class="leading-7 text-slate-600">
+            “Desde o primeiro atendimento, tive clareza sobre todas as etapas
+            do processo. A equipe foi muito atenciosa e profissional.”
+          </p>
+
+          <footer class="mt-7 border-t border-slate-200 pt-5">
+            <strong class="text-sm text-navy">Mariana S.</strong>
+            <p class="mt-1 text-xs text-slate-400">
+              Cliente desde 2022
+            </p>
+          </footer>
+
+        </blockquote>
+
+
+        <blockquote class="border border-slate-200 bg-white p-8">
+
+          <div class="mb-6 text-gold">
+            ★★★★★
+          </div>
+
+          <p class="leading-7 text-slate-600">
+            “Profissionais extremamente preparados. Sempre recebi explicações
+            claras e acompanhamento próximo durante todo o processo.”
+          </p>
+
+          <footer class="mt-7 border-t border-slate-200 pt-5">
+            <strong class="text-sm text-navy">Carlos R.</strong>
+            <p class="mt-1 text-xs text-slate-400">
+              Cliente desde 2021
+            </p>
+          </footer>
+
+        </blockquote>
+
+
+        <blockquote class="border border-slate-200 bg-white p-8">
+
+          <div class="mb-6 text-gold">
+            ★★★★★
+          </div>
+
+          <p class="leading-7 text-slate-600">
+            “O atendimento personalizado fez toda diferença. Me senti seguro
+            para tomar as decisões necessárias.”
+          </p>
+
+          <footer class="mt-7 border-t border-slate-200 pt-5">
+            <strong class="text-sm text-navy">Fernanda M.</strong>
+            <p class="mt-1 text-xs text-slate-400">
+              Cliente desde 2023
+            </p>
+          </footer>
+
+        </blockquote>
+
+      </div>
+    </div>
+  </section>
+
+
+    <div class="mx-auto max-w-4xl px-6">
+
+      <div class="text-center">
+
+        <div class="mb-5 flex items-center justify-center gap-4">
+          <div class="gold-line"></div>
+          <span class="text-xs font-semibold uppercase tracking-[0.3em] text-gold">
+            Dúvidas
+          </span>
+          <div class="gold-line"></div>
+        </div>
+
+        <h2 class="serif text-4xl text-navy">
+          Perguntas frequentes
+        </h2>
+
+      </div>
+
+
+      <div class="mt-12 space-y-3">
+
+        <details class="group border border-slate-200">
+          <summary class="flex cursor-pointer items-center justify-between p-6 font-medium text-navy">
+            Como funciona a primeira consulta?
+            <span class="text-xl text-gold transition group-open:rotate-45">+</span>
+          </summary>
+
+          <div class="border-t border-slate-200 px-6 pb-6 pt-5 leading-7 text-slate-500">
+            Na primeira conversa, buscamos compreender sua situação,
+            identificar os principais pontos jurídicos e explicar os possíveis
+            caminhos de atuação.
+          </div>
+        </details>
+
+
+        <details class="group border border-slate-200">
+          <summary class="flex cursor-pointer items-center justify-between p-6 font-medium text-navy">
+            O atendimento pode ser realizado online?
+            <span class="text-xl text-gold transition group-open:rotate-45">+</span>
+          </summary>
+
+          <div class="border-t border-slate-200 px-6 pb-6 pt-5 leading-7 text-slate-500">
+            Sim. O escritório realiza atendimentos presenciais e online,
+            conforme a necessidade e disponibilidade.
+          </div>
+        </details>
+
+
+        <details class="group border border-slate-200">
+          <summary class="flex cursor-pointer items-center justify-between p-6 font-medium text-navy">
+            Quanto custa uma consulta jurídica?
+            <span class="text-xl text-gold transition group-open:rotate-45">+</span>
+          </summary>
+
+          <div class="border-t border-slate-200 px-6 pb-6 pt-5 leading-7 text-slate-500">
+            Os honorários dependem da natureza e complexidade de cada caso.
+            Entre em contato para receber informações específicas sobre sua
+            situação.
+          </div>
+        </details>
+
+
+        <details class="group border border-slate-200">
+          <summary class="flex cursor-pointer items-center justify-between p-6 font-medium text-navy">
+            O escritório atende empresas?
+            <span class="text-xl text-gold transition group-open:rotate-45">+</span>
+          </summary>
+
+          <div class="border-t border-slate-200 px-6 pb-6 pt-5 leading-7 text-slate-500">
+            Sim. Prestamos serviços jurídicos para empresas de diferentes
+            portes, incluindo consultoria preventiva e atuação em demandas
+            específicas.
+          </div>
+        </details>
+
+      </div>
+
+    </div>
+  </section>
+
+  <section id="contato" class="bg-navy py-24 lg:py-32">
+
+    <div class="mx-auto grid max-w-7xl gap-16 px-6 lg:grid-cols-2 lg:px-8">
+
+      <div>
+
+        <div class="mb-6 flex items-center gap-4">
+          <div class="gold-line"></div>
+          <span class="text-xs font-semibold uppercase tracking-[0.3em] text-gold">
+            Entre em contato
+          </span>
+        </div>
+
+        <h2 class="serif text-4xl text-white sm:text-5xl">
+          Vamos conversar sobre o seu caso.
+        </h2>
+
+        <p class="mt-6 max-w-lg leading-8 text-white/60">
+          Preencha o formulário e nossa equipe entrará em contato para
+          entender sua necessidade e orientar sobre os próximos passos.
+        </p>
+
+
+        <div class="mt-10 space-y-6">
+
+          <div class="flex gap-4">
+            <div class="flex h-11 w-11 shrink-0 items-center justify-center bg-white/5 text-gold">
+              <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                  d="M3 5a2 2 0 012-2h3.28a2 2 0 011.94 1.515l.65 2.6a2 2 0 01-.45 1.83l-1.5 1.5a16 16 0 007.09 7.09l1.5-1.5a2 2 0 011.83-.45l2.6.65A2 2 0 0121 17.72V21a2 2 0 01-2 2C9.61 23 1 14.39 1 4a2 2 0 012-2z"/>
+              </svg>
+            </div>
+
+            <div>
+              <p class="text-xs uppercase tracking-wider text-white/40">
+                Telefone
+              </p>
+
+              <p class="mt-1 text-white">
+                (11) 3333-4444
+              </p>
+            </div>
+          </div>
+
+
+          <div class="flex gap-4">
+            <div class="flex h-11 w-11 shrink-0 items-center justify-center bg-white/5 text-gold">
+              <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                  d="M3 8l9 6 9-6M5 5h14a2 2 0 012 2v10a2 2 0 01-2 2H5a2 2 0 01-2-2V7a2 2 0 012-2z"/>
+              </svg>
+            </div>
+
+            <div>
+              <p class="text-xs uppercase tracking-wider text-white/40">
+                E-mail
+              </p>
+
+              <p class="mt-1 text-white">
+                contato@almeidaassociados.com.br
+              </p>
+            </div>
+          </div>
+
+
+          <div class="flex gap-4">
+            <div class="flex h-11 w-11 shrink-0 items-center justify-center bg-white/5 text-gold">
+              <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                  d="M12 21s7-4.35 7-11a7 7 0 10-14 0c0 6.65 7 11 7 11zM12 10a2 2 0 100-4 2 2 0 000 4z"/>
+              </svg>
+            </div>
+
+            <div>
+              <p class="text-xs uppercase tracking-wider text-white/40">
+                Escritório
+              </p>
+
+              <p class="mt-1 text-white">
+                Av. Paulista, 1000 — São Paulo/SP
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+
+      <div class="bg-white p-7 sm:p-10">
+
+        <h3 class="serif text-2xl text-navy">
+          Solicite um contato
+        </h3>
+
+        <p class="mt-2 text-sm text-slate-500">
+          Responderemos assim que possível.
+        </p>
+
+        <form id="contactForm" class="mt-8 space-y-5">
+
+          <div>
+            <label for="name" class="mb-2 block text-sm font-medium text-navy">
+              Nome completo
+            </label>
+
+            <input
+              id="name"
+              type="text"
+              required
+              placeholder="Seu nome"
+              class="w-full border border-slate-200 px-4 py-3.5 outline-none transition focus:border-gold"
+            />
+          </div>
+
+
+          <div class="grid gap-5 sm:grid-cols-2">
+
+            <div>
+              <label for="phone" class="mb-2 block text-sm font-medium text-navy">
+                Telefone
+              </label>
+
+              <input
+                id="phone"
+                type="tel"
+                required
+                placeholder="(00) 00000-0000"
+                class="w-full border border-slate-200 px-4 py-3.5 outline-none transition focus:border-gold"
+              />
+            </div>
+
+            <div>
+              <label for="email" class="mb-2 block text-sm font-medium text-navy">
+                E-mail
+              </label>
+
+              <input
+                id="email"
+                type="email"
+                required
+                placeholder="voce@email.com"
+                class="w-full border border-slate-200 px-4 py-3.5 outline-none transition focus:border-gold"
+              />
+            </div>
+
+          </div>
+
+
+          <div>
+            <label for="area" class="mb-2 block text-sm font-medium text-navy">
+              Área de interesse
+            </label>
+
+            <select
+              id="area"
+              class="w-full border border-slate-200 bg-white px-4 py-3.5 outline-none transition focus:border-gold"
+            >
+              <option>Selecione uma opção</option>
+              <option>Direito Civil</option>
+              <option>Direito Empresarial</option>
+              <option>Direito Trabalhista</option>
+              <option>Direito de Família</option>
+              <option>Direito Imobiliário</option>
+              <option>Direito Digital</option>
+              <option>Outra área</option>
+            </select>
+          </div>
+
+
+          <div>
+            <label for="message" class="mb-2 block text-sm font-medium text-navy">
+              Como podemos ajudar?
+            </label>
+
+            <textarea
+              id="message"
+              rows="5"
+              required
+              placeholder="Conte brevemente sobre sua situação..."
+              class="w-full resize-none border border-slate-200 px-4 py-3.5 outline-none transition focus:border-gold"
+            ></textarea>
+          </div>
+
+
+          <label class="flex gap-3 text-xs leading-5 text-slate-500">
+            <input
+              type="checkbox"
+              required
+              class="mt-1 accent-[#C8A45D]"
+            />
+
+            <span>
+              Autorizo o contato para tratar da solicitação enviada.
+            </span>
+          </label>
+
+
+          <button
+            type="submit"
+            class="w-full bg-navy px-6 py-4 font-semibold text-white transition hover:bg-navyLight"
+          >
+            Enviar solicitação
+          </button>
+
+          <p id="formMessage" class="hidden text-center text-sm text-green-600">
+            Solicitação enviada com sucesso!
+          </p>
+
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="bg-[#040B14] py-12 text-white">
+
+    <div class="mx-auto max-w-7xl px-6 lg:px-8">
+
+      <div class="grid gap-10 md:grid-cols-4">
+
+        <div class="md:col-span-2">
+
+          <div class="flex items-center gap-3">
+
+            <div class="flex h-11 w-11 items-center justify-center border border-gold">
+              <span class="serif text-xl text-gold">A</span>
+            </div>
+
+            <div>
+              <div class="serif text-lg">ALMEIDA</div>
+              <div class="text-[9px] uppercase tracking-[0.25em] text-gold">
+                & Associados
+              </div>
+            </div>
+
+          </div>
+
+          <p class="mt-5 max-w-md text-sm leading-6 text-white/40">
+            Advocacia estratégica, atendimento personalizado e compromisso
+            com a excelência profissional.
+          </p>
+
+        </div>
+
+
+        <div>
+          <h4 class="text-sm font-semibold text-white">
+            Navegação
+          </h4>
+
+          <div class="mt-4 space-y-3 text-sm text-white/40">
+            <a href="#sobre" class="block transition hover:text-gold">
+              O Escritório
+            </a>
+
+            <a href="#atuacao" class="block transition hover:text-gold">
+              Áreas de Atuação
+            </a>
+
+            <a href="#equipe" class="block transition hover:text-gold">
+              Equipe
+            </a>
+
+            <a href="#contato" class="block transition hover:text-gold">
+              Contato
+            </a>
+          </div>
+        </div>
+
+
+        <div>
+          <h4 class="text-sm font-semibold text-white">
+            Atendimento
+          </h4>
+
+          <div class="mt-4 space-y-3 text-sm text-white/40">
+            <p>Segunda a sexta</p>
+            <p>09:00 às 18:00</p>
+            <p>São Paulo — SP</p>
+          </div>
+        </div>
+
+      </div>
+
+
+      <div class="mt-12 border-t border-white/10 pt-7">
+
+        <div class="flex flex-col justify-between gap-4 text-xs text-white/30 md:flex-row">
+
+          <p>
+            © 2026 Almeida & Associados. Todos os direitos reservados.
+          </p>
+
+          <div class="flex gap-5">
+            <a href="#" class="hover:text-gold">
+              Política de Privacidade
+            </a>
+
+            <a href="#" class="hover:text-gold">
+              Termos de Uso
+            </a>
+          </div>
+
+        </div>
+
+        <p class="mt-4 text-[10px] leading-5 text-white/20">
+          * Informações ilustrativas. Substitua os dados, estatísticas,
+          depoimentos e informações profissionais pelos dados reais do
+          escritório antes da publicação.
+        </p>
+
+      </div>
+
+    </div>
+  </footer>
+
+
+  <a
+    href="https://wa.me/5511999999999"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Falar pelo WhatsApp"
+    class="fixed bottom-6 right-6 z-40 flex h-14 w-14 items-center justify-center rounded-full bg-[#25D366] text-white shadow-lg transition hover:scale-105"
+  >
+    <svg class="h-7 w-7" fill="currentColor" viewBox="0 0 24 24">
+      <path d="M20.52 3.48A11.77 11.77 0 0012.1 0C5.6 0 .31 5.29.31 11.8c0 2.08.54 4.1 1.57 5.89L.23 24l6.47-1.62a11.8 11.8 0 005.4 1.3h.01c6.5 0 11.79-5.29 11.79-11.8 0-3.15-1.23-6.11-3.38-8.4zM12.1 21.66h-.01a9.82 9.82 0 01-5.01-1.37l-.36-.21-3.84.96 1.02-3.74-.23-.38a9.82 9.82 0 01-1.5-5.22C2.17 6.28 6.62 1.83 12.1 1.83c2.65 0 5.14 1.03 7.02 2.91a9.85 9.85 0 012.9 7.03c0 5.48-4.45 9.89-9.92 9.89zm5.42-7.4c-.3-.15-1.78-.88-2.05-.98-.28-.1-.48-.15-.68.15-.2.3-.78.98-.96 1.18-.18.2-.35.22-.65.07-.3-.15-1.25-.46-2.38-1.47-.88-.79-1.47-1.76-1.64-2.06-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.53.15-.18.2-.3.3-.5.1-.2.05-.38-.02-.53-.07-.15-.68-1.63-.93-2.23-.25-.6-.5-.52-.68-.53h-.58c-.2 0-.53.07-.81.38-.28.3-1.06 1.03-1.06 2.5 0 1.48 1.08 2.91 1.23 3.11.15.2 2.12 3.24 5.14 4.54.72.31 1.28.5 1.72.64.72.23 1.38.2 1.9.12.58-.09 1.78-.73 2.03-1.43.25-.7.25-1.3.18-1.43-.07-.13-.28-.2-.58-.35z"/>
+    </svg>
+  </a>
+
+  <script>
+
+    
+    const menuButton = document.getElementById("menuButton");
+    const mobileMenu = document.getElementById("mobileMenu");
+
+    menuButton.addEventListener("click", () => {
+      mobileMenu.classList.toggle("hidden");
+    });
+
+
+
+    document.querySelectorAll("#mobileMenu a").forEach(link => {
+      link.addEventListener("click", () => {
+        mobileMenu.classList.add("hidden");
+      });
+    });
+
+    const form = document.getElementById("contactForm");
+    const formMessage = document.getElementById("formMessage");
+
+    form.addEventListener("submit", (event) => {
+      event.preventDefault();
+
+      formMessage.classList.remove("hidden");
+
+      form.reset();
+
+      setTimeout(() => {
+        formMessage.classList.add("hidden");
+      }, 5000);
+    });
+
+  </script>
+
+</body>
+</html>
